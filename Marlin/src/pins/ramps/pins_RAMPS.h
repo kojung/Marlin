@@ -568,17 +568,17 @@
      *             ------                           ------
      *              EXP1                             EXP2
      */
-    #define EXP1_01_PIN                  AUX4_09  // 37
-    #define EXP1_02_PIN                  AUX4_10  // 35
+    #define EXP1_01_PIN                  AUX4_09
+    #define EXP1_02_PIN                  AUX4_10
 
     #if ALL(TOUCH_UI_FTDI_EVE, LCD_FYSETC_TFT81050)
-      #define EXP2_03_PIN                AUX4_11  // 33
-      #define EXP2_05_PIN                AUX4_12  // 31
-      #define EXP2_08_PIN                     -1  // RESET
+      #define EXP2_03_PIN                AUX4_11
+      #define EXP2_05_PIN                AUX4_12
+      #define EXP2_08_PIN                     -1
     #else
-      #define EXP2_03_PIN                AUX4_12  // 31
-      #define EXP2_05_PIN                AUX4_11  // 33
-      #define EXP2_08_PIN                AUX4_07  // 41
+      #define EXP2_03_PIN                AUX4_12
+      #define EXP2_05_PIN                AUX4_11
+      #define EXP2_08_PIN                AUX4_07 
     #endif
 
   #endif
@@ -902,7 +902,7 @@
   #endif // IS_NEWPANEL
 
   #ifndef BEEPER_PIN
-    #define BEEPER_PIN               EXP1_01_PIN  // Most common mapping
+    #define BEEPER_PIN               EXP1_01_PIN
   #endif
 
 #endif // HAS_WIRED_LCD && !LCD_PINS_DEFINED
